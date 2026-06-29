@@ -196,6 +196,19 @@
     .btn-purple { background: var(--purple); color: #fff;   padding: 13px 22px; font-size: 14px; }
     .btn-purple:hover { opacity: .85; transform: translateY(-1px); }
 
+    .hero-visual {
+      position: relative; z-index: 1;
+      margin-top: 60px;
+      max-width: 960px; width: 100%;
+      animation: fadeUp .6s .45s ease both;
+    }
+    .hero-banner {
+      width: 100%; display: block;
+      border-radius: 20px;
+      border: 1px solid rgba(6,200,232,.18);
+      box-shadow: 0 0 80px rgba(6,200,232,.18), 0 40px 100px rgba(0,0,0,.55);
+    }
+
     .hero-scroll-hint {
       position: absolute; bottom: 36px; left: 50%; transform: translateX(-50%);
       display: flex; flex-direction: column; align-items: center; gap: 8px;
@@ -414,6 +427,9 @@
       <a href="#owners" class="btn btn-cyan">⚡ List Your Station</a>
       <a href="#drivers" class="btn btn-ghost">Find a Charger →</a>
     </div>
+  </div>
+  <div class="hero-visual">
+    <img src="images/EVChargingBanner.png" alt="Zappo EV Charging — live station network" class="hero-banner" />
   </div>
   <div class="hero-scroll-hint">
     <div class="scroll-line"></div>
